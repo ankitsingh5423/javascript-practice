@@ -82,30 +82,52 @@
 //   console.log(`${number} is a odd number`);
 // }
 
-let number = parseInt(prompt("type a number"));
-function range(number) {
-  let range = "";
-  if (number > 1 && number < 10) {
-    range = "tiny";
-  } else if (number > 11 && number < 100) {
-    range = "small";
-  } else if (number > 101 && number < 1000) {
-    range = "medium";
-  } else if (number > 1000) {
-    range = "large";
-  }
-  switch (range) {
-    case tiny:
-      return "tiny number";
-    case small:
-      return "small number";
-    case medium:
-      return "medium number";
-    case large:
-      return "large number";
-    default:
-      return "invalid input";
-  }
-}
+// let number = parseInt(prompt("type a number"));
+// function range(number) {
+//   let range = "";
+//   if (number > 1 && number < 10) {
+//     range = "tiny";
+//   } else if (number > 11 && number < 100) {
+//     range = "small";
+//   } else if (number > 101 && number < 1000) {
+//     range = "medium";
+//   } else if (number > 1000) {
+//     range = "large";
+//   }
+//   switch (range) {
+//     case "tiny":
+//       return "tiny number";
+//     case "small":
+//       return "small number";
+//     case "medium":
+//       return "medium number";
+//     case "large":
+//       return "large number";
+//     default:
+//       return "invalid input";
+//   }
+// }
 
-console.log(range(number));
+// console.log(range(number));
+
+// function check(number) {
+//   let odd = 0;
+//   let even = 0;
+
+//   for (let i = 0; i < number; ) {
+//     let lastNumber = number % 10;
+//     if (lastNumber % 2 === 0) {
+//       even++;
+//     } else {
+//       odd++;
+//     }
+//     let newNumber = Math.floor(number / 10);
+//     number = newNumber;
+//   }
+//   return { even, odd };
+// }
+
+// console.log(check(12345));
+
+
+
