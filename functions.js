@@ -129,5 +129,62 @@
 
 // console.log(check(12345));
 
+// reversing a number without using string method
 
+// function reverse(number) {
+//   let store = "";
+//   while (number > 0) {
+//     let lastNumber = number % 10;
+//     store += lastNumber;
+//     let newNumber = Math.floor(number / 10);
+//     number = newNumber;
+//   }
+//   let result = parseInt(store);
+//   return result;
+// }
 
+// console.log(reverse(12345));
+
+// write a function grade calculator
+
+function Grade(number) {
+  let message = "";
+  let grade = "";
+  let remarks = "";
+  if (number > 100) {
+    message = "plz enter a number less than 101";
+    return message
+  } else if (number < 0) {
+    message = "negative number are not allowed";
+    return message
+  } else if (number >= 90) {
+    grade = "A";
+  } else if (number >= 60) {
+    grade = "B";
+  } else if (number >= 33) {
+    grade = "C";
+  } else {
+    grade = "D";
+  }
+
+  switch (grade) {
+    case "A":
+      remarks = "Excellent";
+      break;
+    case "B":
+      remarks = "Good";
+      break;
+    case "C":
+      remarks = "Better";
+      break;
+    case "D":
+      remarks = "Fail";
+      break;
+    default:
+      break;
+  }
+
+  return {grade, remarks}
+}
+
+console.log(Grade(99));
