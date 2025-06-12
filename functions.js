@@ -147,44 +147,81 @@
 
 // write a function grade calculator
 
-function Grade(number) {
-  let message = "";
-  let grade = "";
-  let remarks = "";
-  if (number > 100) {
-    message = "plz enter a number less than 101";
-    return message
-  } else if (number < 0) {
-    message = "negative number are not allowed";
-    return message
-  } else if (number >= 90) {
-    grade = "A";
-  } else if (number >= 60) {
-    grade = "B";
-  } else if (number >= 33) {
-    grade = "C";
-  } else {
-    grade = "D";
-  }
+// function Grade(number) {
+//   let message = "";
+//   let grade = "";
+//   let remarks = "";
+//   if (number > 100) {
+//     message = "plz enter a number less than 101";
+//     return message
+//   } else if (number < 0) {
+//     message = "negative number are not allowed";
+//     return message
+//   } else if (number >= 90) {
+//     grade = "A";
+//   } else if (number >= 60) {
+//     grade = "B";
+//   } else if (number >= 33) {
+//     grade = "C";
+//   } else {
+//     grade = "D";
+//   }
 
-  switch (grade) {
-    case "A":
-      remarks = "Excellent";
-      break;
-    case "B":
-      remarks = "Good";
-      break;
-    case "C":
-      remarks = "Better";
-      break;
-    case "D":
-      remarks = "Fail";
-      break;
-    default:
-      break;
-  }
+//   switch (grade) {
+//     case "A":
+//       remarks = "Excellent";
+//       break;
+//     case "B":
+//       remarks = "Good";
+//       break;
+//     case "C":
+//       remarks = "Better";
+//       break;
+//     case "D":
+//       remarks = "Fail";
+//       break;
+//     default:
+//       break;
+//   }
 
-  return {grade, remarks}
-}
+//   return {grade, remarks}
+// }
 
-console.log(Grade(99));
+// console.log(Grade(99));
+
+/* -----small calculator------ */
+
+// function calculate(a, b, operation) {
+//   let answer = "";
+//   switch (operation) {
+//     case "+":
+//       answer = a + b;
+//       return `the answer of ${a}${operation}${b} is = ${answer}`;
+//       break;
+//     case "*":
+//       answer = a * b;
+//       return `the answer of ${a}${operation}${b} is = ${answer}`;
+//       break;
+//     case "-":
+//       answer = a - b;
+//       return `the answer of ${a}${operation}${b} is = ${answer}`;
+//       break;
+//     case "/":
+//       answer = a / b;
+//       return `the answer of ${a}${operation}${b} is = ${answer}`;
+//       break;
+//     case "%":
+//       answer = a % b;
+//       return `the answer of ${a}${operation}${b} is = ${answer}`;
+//       break;
+
+//     default:
+//       answer = "something went wrong";
+//       return answer;
+//       break;
+//   }
+// }
+
+// console.log(calculate(4, 3, "/"));
+
+
